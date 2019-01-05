@@ -33,3 +33,13 @@ Outputs:
 Modifications:
 
 * `invert` - Must be a list containing any subset of text-based input field names.
+
+
+# Example
+
+Adds a `!ban` command that you can use for easy bans while on mobile devices. This rule is triggered by your own comment, removes that and its parent item, and bans the owner of the parent item.
+
+    ---
+    author_name: [your_username]
+    body: [!ban]
+    action: [remove, remove_parent, ban_parent]
